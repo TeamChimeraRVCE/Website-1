@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/animate.min.css" type="text/css"/>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/creative.css" type="text/css"/>
-    <link rel="stylesheet" href="css/fakeLoader.css"/>
+ 
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
 
     <!-- Google Analytics script -->
@@ -34,25 +34,56 @@
 </head>
 
 <body id="page-top">
-    <div id="fakeLoader"></div>
-    <script src="js/jquery.js"></script>
-    <script src="js/fakeLoader.min.js"></script>
-    <script type="text/javascript">
-      $(window).load(function() {
-          $('#status').fadeOut();
-          $('#fakeLoader').delay(300).fadeOut('slow');
-      });
-    </script>
-    <script type="text/javascript">
-    $("#fakeLoader").fakeLoader({
-        timeToHide:30000, //Time in milliseconds for fakeLoader disappear
-        zIndex:10000, // Default zIndex
-        spinner:"spinner3",//Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
-        bgColor:"#2e7d32", //Hex, RGB or RGBA colors
-        //imagePath:"yourPath/customizedImage.gif" //If you want can you insert your custom image
 
-    });
-    </script>
+        <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog" style="width: 100% !important;">
+              
+                  <!-- Modal content-->
+                  <div class="modal-content" >
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">PI Slots</h4>
+                    </div>
+                    <div class="modal-body">
+                       
+                                  <ul id="myTab" class="nav nav-tabs">
+                                         
+                                        <li><a data-toggle="tab" href="#menu0">All Results!</a></li>
+                                        <li><a data-toggle="tab" href="#menu1"> </a></li>
+                                        <li><a data-toggle="tab" href="#menu2"> </a></li>
+                                        
+                                      </ul>
+                                      
+                                      
+                                      <div class="tab-content">
+                                            <div id="menu0" class="tab-pane fade in active">
+                                                    <input id="eWingB" type="button" value="E-Wing Results" class="btn btn-primary" />
+                                                    <input id="mWingB" type="button" value="M-Wing Results" class="btn btn-primary" />
+                                                    
+                                                      
+                                            </div>   
+                                            <div id="menu2" class="tab-pane fade in">
+                                                    
+                                                    <iframe src="https://drive.google.com/file/d/1PJbI2RSQOg8B-tEvzI-hmF7nT5c9YcSR/preview" width="100%" height="480"></iframe>
+                                            </div>  
+                                            <div id="menu1" class="tab-pane fade in">
+                                            <iframe src="https://drive.google.com/file/d/10_6oLhHJJ7LzYChBhkwp02agoM96qSXZ/preview" width="100%" height="480"></iframe>
+                                        </div>
+                                      </div>
+                      
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+              
+                </div>
+              </div>
+
+    
+    <script src="js/jquery.js"></script>
+   
+ 
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -66,6 +97,7 @@
                 <a class="navbar-brand1 page-scroll" href="#page-top"><img src="img/logomain.png" /></a>
                 <a class="navbar-brand page-scroll" href="#page-top"><strong>TEAM CHIMERA</strong></a>
             </div>
+           
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
@@ -87,6 +119,7 @@
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
+                  
 
                 </ul>
             </div>
@@ -97,10 +130,14 @@
 
     <section class="bg-image">
         <div class="header-content" id="home">
-            <p class="heading-text wow fadeIn">Welcome to Team Chimera</p>
+            <p class="heading-text wow fadeIn">Welcome to Team Chimera
+                  
+            </p>
         </div>
-
-
+        <div>
+           
+        </div>
+      
         <div style='width:100px;margin:0 auto;' class="hideme"><a href="#about" class="scroll page-scroll"><img src="img/scroll.png" align="middle" /></a></div>
 
     </section>
@@ -277,6 +314,21 @@ Team Chimera has, till date, undertaken various ventures, which include: E-volve
                     </div>
                 </div>
 
+                <div class="col-md-4 col-sm-6 wow1 portfolio-item wow fadeIn selector-1" style="visibility: visible; animation-name: fadeIn;">
+                    <a href="#portfolioModal11" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/bharat_coi.JPG" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Formula Bharat 2019</h4>
+                        <p class="text-muted">1st in Business Presentation</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -429,6 +481,22 @@ Team Chimera has, till date, undertaken various ventures, which include: E-volve
                             </div>
                         </li>
 
+                        <li class="timeline-inverted wow zoomIn" style="visibility: visible; animation-name: zoomIn;">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/10.JPG" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>January 2019</h4>
+                                    <h4 class="subheading">Formula Bharat </h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted text-justify">Participated in Formula Bharat 2019 held in Coimbatore,India and bagged 1st place in in Business Plan Presentation.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
                         <li class="timeline-inverted">
                             <div class="timeline-image">
                                 <h4>Be Part
@@ -450,56 +518,56 @@ Team Chimera has, till date, undertaken various ventures, which include: E-volve
         <div class="container">
             <div class="row team-member">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading wow fadeIn">Faculty Advisor</h2>
+                    <h2 class="section-heading wow fadeIn" style="visibility: visible; animation-name: fadeIn;">Faculty Advisor</h2>
                     <hr class="primary">
                 </div>
                 <div class="col-lg-12 text-center">
-                    <img class="img-circle wow bounceInRight" src="img/team/sir.jpg" width="170px" height="170px">
+                    <img class="img-circle wow bounceInRight" src="img/team/sir.jpg" width="170px" height="170px" style="visibility: visible; animation-name: bounceInRight;">
                 </div>
                 <div class="col-lg-12 text-center">
                     <h2>DR. SHANMUKHA NAGARAJ</h2>
                     <p>Dean of Student Affairs
-                    <p>Professor , Department of Mechanical Engineering</p>
-                  </p>
+                    </p><p>Professor , Department of Mechanical Engineering</p>
+                  <p></p>
                 </div>
             </div>
             <div class="row" style="margin-top:50px">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading wow fadeIn">Our Team</h2>
+                    <h2 class="section-heading wow fadeIn" style="visibility: visible; animation-name: fadeIn;">Our Team</h2>
                     <hr class="primary" style="margin-bottom:40px">
                 </div>
             </div>
-            <div class="row wow fadeInUp team-member" align="center">
+            <div class="row wow fadeInUp team-member" align="center" style="visibility: visible; animation-name: fadeInUp;">
                 <div class="col-lg-3">
-                    <img class="img-size img-circle" src="img/team/shrikesh.jpg">
-                    <h3>Shrikesh Sheshaprasad</h3>
+                    <img class="img-size img-circle" src="img/team/Venkatesh.jpeg">
+                    <h3>VENKATESH S</h3>
                     <p>Team Captain</p>
                 </div>
                 <div class="col-lg-3">
-                    <img class="img-size img-circle" src="img/team/prakyath.jpg">
-                    <h3>Prakyath Poojary</h3>
+                    <img class="img-size img-circle" src="img/team/Prajwal_Shetty.jpeg">
+                    <h3>Prajwal Shetty</h3>
                     <p>Vice Captain</p>
 
                 </div>
                 <div class="col-lg-3">
-                    <img class="img-size img-circle" src="img/team/anshuman.jpg">
-                    <h3>Anshuman B V</h3>
-                    <p>Electrical Head and ESO</p>
+                    <img class="img-size img-circle" src="img/team/rutuja_jagatap.jpg">
+                    <h3>Rutuja Jagatap</h3>
+                    <p>Vice Captain</p>
                 </div>
                 <div class="col-lg-3">
-                    <img class="img-size img-circle" src="img/team/ravi.jpg">
-                    <h3>Raviteja S J</h3>
-                    <p>Mechanical Head</p>
+                    <img class="img-size img-circle" src="img/team/mushtaq_sheikh.jpg">
+                    <h3>Mushtaq Sheikh</h3>
+                    <p>Project Manager</p>
                 </div>
             </div>
             <div class="row" id="results" style="margin-top:50px">
                 <div class="col-lg-12 text-center">
                     <a href="#portfolioModal7" class="btn btn-success btn-lg selector" type="button" data-toggle="modal">View full team</a>
                 </div>
-                </br>
-                </br>
-                </br>
-              </br>
+                <br>
+                <br>
+                <br>
+              <br>
           </div>
         </div>
     </section>
@@ -697,10 +765,10 @@ Team Chimera has, till date, undertaken various ventures, which include: E-volve
                 <div class="col-lg-4 col-lg-offset-4" align="center" style="padding-top:30px">
                     <a target="_blank" href="https://www.toradex.com/" data-toggle="tooltip" title="Prime"><img class="selector"  width="160px" src="img/sponsers/prime.jpg"></a>
                 </div>
-            </div>
+          </div>
         </div>
     </div>
-
+</section>
 
     <script>
   $(document).ready(function(){
@@ -708,30 +776,28 @@ Team Chimera has, till date, undertaken various ventures, which include: E-volve
   });
   </script>
 
-
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading wow bounceIn">Contact Us</h2>
-                    <hr class="primary">
-                    <p>Ready to contribute to our project? <br> Give us a call or send us an email and we will get back to you as soon as possible!</p>
-                </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <!-- <i class="fa fa-phone fa-3x wow bounceIn"></i> -->
-                    <p><strong>Shrikesh S:</strong> +91 97318 22147 </p>
-                    <p><strong>Swapnil S:</strong> +91 83320 77129 </p>
-                    <p><strong>Raunaq Saboo:</strong> +91 90093 69856 </p>
-                    <p><strong>E-mail:</strong> teamchimera@rvce.edu.in</p>
-                </div>
-            </div>
-            <hr>
-            <div class="text-center wow fadeIn">
-                    <p><font color="#00C851">Don't forget to check our brochure out!</font></p>
-                    <button class="button btn-lg selector"><a href="brochure/current_brochure.pdf" download="team_chimera_brochure" style="text-decoration:none; color: #00C851;">Get Brochure</a></button>
-            </div>
-        </div>
-    </section>
+  <section id="contact">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-8 col-lg-offset-2 text-center">
+                  <h2 class="section-heading wow bounceIn" style="visibility: visible;">Contact Us</h2>
+                  <hr class="primary">
+                  <p>Ready to contribute to our project? <br> Give us a call or send us an email and we will get back to you as soon as possible!</p>
+              </div>
+              <div class="col-lg-8 col-lg-offset-2 text-center">
+                  <!-- <i class="fa fa-phone fa-3x wow bounceIn"></i> -->
+                  <p><strong>Venkatesh S:</strong> +91 80508 79596 </p>
+                  <p><strong>Mushtaq Sheikh:</strong> +91 73376 39720 </p>
+                  <p><strong>E-mail:</strong> teamchimera@rvce.edu.in</p>
+              </div>
+          </div>
+          <hr>
+          <div class="text-center wow fadeIn" style="visibility: visible;">
+                  <p><font color="#00C851">Don't forget to check our brochure out!</font></p>
+                  <button class="button btn-lg selector"><a href="brochure/current_brochure.pdf" download="team_chimera_brochure" style="text-decoration:none; color: #00C851;">Get Brochure</a></button>
+          </div>
+      </div>
+</section>
     <footer class="bg-primary">
         <div class="container text-center">
             <div class="row">
@@ -1045,6 +1111,68 @@ Team Chimera has, till date, undertaken various ventures, which include: E-volve
         </div>
     </div>
 
+    <div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Formula Bharat 2019</h2>
+                            <p class="item-intro text-muted">BHARAT 2019</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/bharat_coi2.JPG" alt="">
+                            <p class="text-justify">Team Chimera participated in Formula Bharat 2019 held in Coimbatore, India. It is an engineering design competition in which students from all over the country, compete with a life-size Formula-style vehicle in areas of engineering design, overall cost, marketability and dynamic performance. <br><br>
+
+                                Our journey started off by having pre technical inspection on the first day.
+                                Both the E Wing and the Mech Wing worked really hard to get through the inspection round.
+                                With the aim of winning the competition, we came back with same enthusiasm and spirit on the second day.
+                                The preliminary round of Business plan presentation was held.
+                                The judges were very happy with our plan and they also recommend some improvements.
+                                Meanwhile, the technical inspection was also held where our designs were highly appreciated and were compared to industrial standards.
+                                <br><br>
+
+                                The design event tested the engineering skills of the team.
+                                It was followed by Cost Report presentation.
+                                On the same day, the results of Business plan presentation were announced and we were into finals along with 5 others teams.
+                                The BP team made the necessary edits needed and were ready for the finals.
+                                The finals of BPP was stage event where we had to present our plan in front of a Audience and were judged by panel of 10 judges.
+                                The amount of support we received from the audience was overwhelming.
+                                <br><br>
+                                Fourth day started off with great excitement as the results were displayed.
+                                The judges were immensely happy with our design but there were some technical errors in the accumulater and safety of the car was a big concern.
+                                Unfortunately, we weren't able to clear the technical inspection.
+                                We are very proud and happy to announce that Team Chimera won the Business Plan event.
+                                This was the first time we won the BPP and this boosted the teams confidence to a great level.
+                                <br><br>
+                                The complete results are as follows
+                            </p>
+                            <br>
+                            <p style="font-weight: bold" class="text-justify">Eighth  in Cost Report
+                            </p>
+                            <p style="font-weight: bold" class="text-justify">First in Business Plan Presentation
+                            </p>
+                            <p style="font-weight: bold" class="text-justify">Fifth in Design Report
+                            </p>
+                            <p class="text-justify">Formula Bharat gave clear insights of our car and its performance.
+                                This event helped us understand our teams strengths and at the same time we realised our flaws.
+                                Overall, we return back with great experience and we wish to improve and give a better performance in our upcoming event.
+                            <br><br>
+                            </p>
+
+
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Portfolio Modal 10 newly added -->
     <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
@@ -1106,8 +1234,16 @@ Team Chimera has, till date, undertaken various ventures, which include: E-volve
                             <hr class="primary" style="margin-bottom:40px">
                         </div>
                     </div>
+<div class="row" id="results" style="margin-top:50px">
 
-                    <div class="row team-member" align="center">
+
+			<!-- Batch 2019 -->
+
+                <div class="col-lg-12 text-center">
+                    <a class="btn btn-success btn-lg selector" type="button" id="b2019">2019 Batch</a>
+                </div>
+				<div id="d2019" style="display:none" >
+				   <div class="row team-member" align="center" >
 
                         <div class="col-lg-3">
                             <img class="img-size img-circle" src="img/team/shrikesh.jpg">
@@ -1246,23 +1382,63 @@ Team Chimera has, till date, undertaken various ventures, which include: E-volve
                             <h3>sarvottam bathwal</h3>
                             <p>Mechanical Engineer</p>
                         </div>
+                      </div>
+				</div>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<!-- Batch 2020 -->
+				
+				<div class="row" id="results" style="margin-top:50px">
+                <div class="col-lg-12 text-center">
+                    <a  class="btn btn-success btn-lg selector" type="button" id="b2020">2020 Batch</a>
+                </div>
+</div>
+				
+				<div  id="d2020" style="display:none" >
+				
+				 <div class="row team-member" align="center">
                         <div class="col-lg-3">
-                            <img class="img-size img-circle" src="img/team/Akshay.jpeg">
-                            <h3>Akshaya Kumar Joish</h3>
-                            <p>Computer Engineer</p>
+                            <img class="img-size img-circle" src="img/team/Venkatesh.jpeg">
+                            <h3>Venkatesh s</h3>
+                            <p>Team Captain</p>
                         </div>
                         <div class="col-lg-3">
-                            <img class="img-size img-circle" src="img/team/sachin.jpg">
-                            <h3>Sachin</h3>
-                            <p>Computer Engineer</p>
-                        </div>
+                            
+                            <img class="img-size img-circle" src="img/team/Prajwal_Shetty.jpeg">
+                            <h3>Prajwal Shetty</h3>
+                            <p>Vice Captain</p>
 
+                        </div>
+                            <div class="col-lg-3">
+                            <img class="img-size img-circle" src="img/team/rutuja_jagatap.jpg">
+                            <h3>rutuja jagatap</h3>
+                            <p>Vice Captain</p>
+                        </div>
+                        <div class="col-lg-3">
+                             <img class="img-size img-circle" src="img/team/mushtaq_sheikh.jpg">
+                            <h3>mushtaq sheikh</h3>
+                            <p>Project Manager</p>
+                        </div>
                     </div>
 
                     <div class="row team-member" align="center">
+
                         <div class="col-lg-3">
-                            <img class="img-size img-circle" src="img/team/hrishikesh.jpeg">
-                            <h3>Hrishikesh Kamath</h3>
+                            <img class="img-size img-circle" src="img/team/AkshayJoish.jpeg">
+                            <h3>Akshaya Kumar Joish</h3>
+                            <p>Computer Engineer</p>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <img class="img-size img-circle" src="img/team/sachin.jpg">
+                            <h3>Sachin</h3>
                             <p>Computer Engineer</p>
                         </div>
                         <div class="col-lg-3">
@@ -1271,32 +1447,22 @@ Team Chimera has, till date, undertaken various ventures, which include: E-volve
                             <p>Computer Engineer</p>
                         </div>
                         <div class="col-lg-3">
-                            <img class="img-size img-circle" src="img/team/Ashtaq.jpg">
-                            <h3>Ashtaq</h3>
-                            <p>Electrical Engineer</p>
+                           <img class="img-size img-circle" src="img/team/Aishwarya Sinha.jpg">
+                            <h3>Aishwarya Sinha</h3>
+                            <p>Management</p>
                         </div>
-                        <div class="col-lg-3">
-                            <img class="img-size img-circle" src="img/team/mushtaq_sheikh.jpg">
-                            <h3>mushtaq sheikh</h3>
-                            <p>Electrical Engineer</p>
-                        </div>
-
                     </div>
 
                     <div class="row team-member" align="center">
-                        <div class="col-lg-3">
-                            <img class="img-size img-circle" src="img/team/Prajwal_Shetty.jpeg">
-                            <h3>Prajwal Shetty</h3>
-                            <p>Electrical Engineer</p>
-                        </div>
 
                         <div class="col-lg-3">
-                            <img class="img-size img-circle" src="img/team/Abhishek_Deshmukh.jpg">
-                            <h3>Abhishek Deshmukh</h3>
-                            <p>Electronics Engineer</p>
+                            
+                            <img class="img-size img-circle" src="img/team/Ashtaq.jpg">
+                            <h3>Ashtaq</h3>
+                            <p>Electrical Head and ESO</p>
                         </div>
                         <div class="col-lg-3">
-                            <img class="img-size img-circle" src="img/team/Chiranjeevi.jpeg">
+                             <img class="img-size img-circle" src="img/team/CHIRANJEEVI N.jpg">
                             <h3>Chiranjeevi N</h3>
                             <p>Electronics Engineer </p>
                         </div>
@@ -1305,40 +1471,462 @@ Team Chimera has, till date, undertaken various ventures, which include: E-volve
                             <h3>SAI SANJAY ATHMURI</h3>
                             <p>Electronics Engineer</p>
                         </div>
-
-                    </div>
-
-                    <div class="row team-member" align="center">
                         <div class="col-lg-3">
                             <img class="img-size img-circle" src="img/team/praveer_prakash.jpg">
                             <h3>praveer prakash</h3>
                             <p>Mechanical Engineer</p>
                         </div>
 
+                    </div>
+
+
+                    <div class="row team-member" align="center">
+
                         <div class="col-lg-3">
-                            <img class="img-size img-circle" src="img/team/rutuja_jagatap.jpg">
-                            <h3>rutuja jagatap</h3>
-                            <p>Mechanical Engineer</p>
+                            <img class="img-size img-circle" src="img/team/Karshit Takhtani.JPG">
+                            <h3>Karshit Takhtani</h3>
+                            <p>Drivetrain Subsystem</p>
+                        </div>
+                     </div>
+				</div>
+				
+</div>
+
+<div class="row" id="results" style="margin-top:50px">
+                <div class="col-lg-12 text-center">
+                    <a  class="btn btn-success btn-lg selector" type="button" id="b2021" >2021 Batch</a>
+                </div>
+				
+				
+				<div  id="d2021" style="display:none">
+				<div class="row team-member" align="center">
+                        <div class="col-lg-3">
+                            <img class="img-size img-circle" src="img/team/Vaibhav Hebbal.jpg">
+                            <h3>Vaibhav Hebbal</h3>
+                            <p>Team Captain</p>
                         </div>
                         <div class="col-lg-3">
-                            <img class="img-size img-circle" src="img/team/sree_siddhant.jpg">
-                            <h3>sree siddhant</h3>
-                            <p>Mechanical Engineer</p>
+                            
+                            <img class="img-size img-circle" src="img/team/.jpeg">
+                            <h3>Shreyas J Sanil</h3>
+                            <p>Vice Captain</p>
+
+                        </div>
+                            <div class="col-lg-3">
+                            <img class="img-size img-circle" src="img/team/Bhardwaj.jpg">
+                            <h3>Raghava Ram Bharadwaj</h3>
+                            <p>Electrical System Officer</p>
+                        </div>
+                       <div class="col-lg-3">
+                            <img class="img-size img-circle" src="img/team/.jpg">
+                            <h3>Pawan Santhosh</h3>
+                            <p>Electrical System Officer</p>
+                        </div>
+                    </div>
+
+                    <div class="row team-member" align="center">
+
+                        <div class="col-lg-3">
+                            <img class="img-size img-circle" src="img/team/Sushanth.jpeg">
+                            <h3>Sushant S Joshi</h3>
+                            <p>Project Manager</p>
+                        </div>
+ <div class="col-lg-3">
+                             <img class="img-size img-circle" src="img/team/Prakash S Bhat.jpeg">
+                            <h3>Prakash S Bhat</h3>
+                            <p>Project Manager</p>
+                        </div>
+                         <div class="col-lg-3">
+                           <img class="img-size img-circle" src="img/team/Kartik Sharma.jpg">
+                            <h3>Kartik Sharma</h3>
+                            <p>Mechanical Head</p>
                         </div>
                         <div class="col-lg-3">
-                            <img class="img-size img-circle" src="img/team/Venkatesh.jpeg">
-                            <h3>Venkatesh s</h3>
-                            <p>Mechanical Engineer</p>
+                            <img class="img-size img-circle" src="img/team/Rithwik Goel.jpeg">
+                            <h3>Rithwik Goel</h3>
+                            <p>Safety Circuits Subsystem</p>
+                        </div>
+                       
+                    </div>
+                    <div class="row team-member" align="center">
+ <div class="col-lg-3">
+                           <img class="img-size img-circle" src="img/team/Vinay Varma B.jpg">
+                            <h3>Vinay Varma B</h3>
+                            <p>BMS Subsystem</p>
+                        </div>
+						
+                       <div class="col-lg-3">
+                            <img class="img-size img-circle" src="img/team/.jpg">
+                            <h3>Sudheendra Hegade</h3>
+                            <p>Multiple Subsystems</p>
+                        </div>
+                        
+                         <div class="col-lg-3">
+                            <img class="img-size img-circle" src="img/team/Sachin Goyal.jpg">
+                            <h3>Sachin Goyal</h3>
+                            <p>Safety Circuits Subsystem</p>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <img class="img-size img-circle" src="img/team/AkshayNP.jpg">
+                            <h3>Akshay Narayan Pai</h3>
+                            <p>Data Acquisition Subsystem</p>
+                        </div>
+
+                    </div>
+                    <div class="row team-member" align="center">
+
+                       <div class="col-lg-3">
+                            <img class="img-size img-circle" src="img/team/Sowjanya M.jpg">
+                            <h3>Sowjanya M</h3>
+                            <p>Safety Circuits Subsystem</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <img class="img-size img-circle" src="img/team/Varsha Kulkarni.jpg">
+                            <h3>Varsha Kulkarni</h3>
+                            <p>Safety Circuits Subsystem</p>
+                        </div>
+                         <div class="col-lg-3">
+                            <img class="img-size img-circle" src="img/team/sambram c swamy.jpg">
+                            <h3>Sambram C Swamy</h3>
+                            <p>Powertrain Subsystem</p>
+                        </div>
+
+                       <div class="col-lg-3">
+                            <img class="img-size img-circle" src="img/team/Shashank K Holla.jpg">
+                            <h3>Shashank K Holla</h3>
+                            <p>Safety Circuits Subsystem</p>
                         </div>
 
                     </div>
 
-                    <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+
+                    <div class="row team-member" align="center">
+					
+                      
+                    <div class="col-lg-3">
+                            <img class="img-size img-circle" src="img/team/.jpg">
+                            <h3>Sagar L</h3>
+                            <p>Suspension Subsystem</p>
+                        </div>
+                       <div class="col-lg-3">
+                            <img class="img-size img-circle" src="img/team/Kiran Kumar R.jpg">
+                            <h3>Kiran Kumar R</h3>
+                            <p>Brakes Subsystem</p>
+                        </div>
+                       <div class="col-lg-3">
+                            <img class="img-size img-circle" src="img/team/.jpg">
+                            <h3>Roopak N</h3>
+                            <p>Drivetrain Subsystem</p>
+                       </div>
+					    <div class="col-lg-3">
+                            <img class="img-size img-circle" src="img/team/Bhagyesh Choudhary.jpg">
+                            <h3>Bhagyesh Choudhari</h3>
+                            <p>Mechanical Engineer</p>
+                       </div>
+                       </div>
+                     
+				
+				
+				</div>
+				
+				<!-- 2022 -->
+				
+				
+				<div class="row" id="results" style="margin-top:50px">
+                <div class="col-lg-12 text-center">
+                    <a  class="btn btn-success btn-lg selector" type="button" id="b2022" >2022 Batch</a>
+                </div>
+</div>
+				<div id="d2022" style="display:none">
+				
+				 <div class="row team-member" align="center">
+        <div class="col-lg-3">
+            <img class="img-size img-circle" src="img/team/.jpg">
+            <h3>Prajyot Biradar</h3>
+            <p></p>
+        </div>
+        <div class="col-lg-3">
+            <img class="img-size img-circle" src="img/team/Janardhana gowda.jpg">
+            <h3>JanardhanaC</h3>
+            <p></p>
+        </div>
+        <div class="col-lg-3">
+            <img class="img-size img-circle" src="img/team/Rajath Rao.jpg">
+            <h3>Rajath Rao TN</h3>
+            <p></p>
+        </div>
+        <div class="col-lg-3">
+            <img class="img-size img-circle" src="img/team/.jpg">
+            <h3>Monika C R</h3>
+            <p></p>
+        </div>
+    </div>
+    <div class="row team-member" align="center">
+        <div class="col-lg-3">
+            <img class="img-size img-circle" src="img/team/Rohith V Kamath.jpg">
+            <h3>Rohith Vivek Kamath</h3>
+            <p></p>
+        </div>
+        <div class="col-lg-3">
+            <img class="img-size img-circle" src="img/team/Junaid Khan.jpg">
+            <h3>Junaid Khan</h3>
+            <p></p>
+        </div>
+        <div class="col-lg-3">
+            <img class="img-size img-circle" src="img/team/.jpg">
+            <h3>Ranganath Karne</h3>
+            <p></p>
+        </div>
+        <div class="col-lg-3">
+            <img class="img-size img-circle" src="img/team/Nishanth.jpg">
+            <h3>M Nishanth Gopal</h3>
+            <p></p>
+        </div>
+    </div>
+    <div class="row team-member" align="center">
+        <div class="col-lg-3">
+            <img class="img-size img-circle" src="img/team/Eshwar sandireddy.jpg">
+            <h3>Sandireddy Reddy Eshwar</h3>
+            <p></p>
+        </div>
+        <div class="col-lg-3">
+            <img class="img-size img-circle" src="img/team/.jpg">
+            <h3>Abhijna H B</h3>
+            <p></p>
+        </div>
+        <div class="col-lg-3">
+            <img class="img-size img-circle" src="img/team/RAUNAK R KOLLE.jpg">
+            <h3>Raunak Kolle</h3>
+            <p></p>
+        </div>
+        <div class="col-lg-3">
+            <img class="img-size img-circle" src="img/team/Vibhor Bhardwaj.jpg">
+            <h3>Vibhor Bhardwaj</h3>
+            <p></p>
+        </div>
+    </div>
+    <div class="row team-member" align="center">
+        <div class="col-lg-3">
+            <img class="img-size img-circle" src="img/team/Hari J.jpg">
+            <h3>Hariharasudhan J</h3>
+            <p></p>
+        </div>
+        <div class="col-lg-3">
+            <img class="img-size img-circle" src="img/team/Pranav Kulkarni.jpg">
+            <h3>Pranav M Kulkarni</h3>
+            <p></p>
+        </div>
+        <div class="col-lg-3">
+            <img class="img-size img-circle" src="img/team/.jpg">
+            <h3>Amogh mallikarjun ukkali</h3>
+            <p></p>
+        </div>
+        <div class="col-lg-3">
+            <img class="img-size img-circle" src="img/team/.jpg">
+            <h3>S Kethan</h3>
+            <p></p>
+        </div>
+    </div>
+    <div class="row team-member" align="center">
+        <div class="col-lg-3">
+            <img class="img-size img-circle" src="img/team/prajwal_prasad.jpg">
+            <h3>Prajwal C P</h3>
+            <p></p>
+        </div>
+        <div class="col-lg-3">
+            <img class="img-size img-circle" src="img/team/Anusha Gangavati.jpg">
+            <h3>Anusha Gangavati</h3>
+            <p></p>
+        </div>
+        <div class="col-lg-3">
+            <img class="img-size img-circle" src="img/team/Sutej AS.jpg">
+            <h3>Sutej AS</h3>
+            <p></p>
+        </div>
+        <div class="col-lg-3">
+            <img class="img-size img-circle" src="img/team/.jpg">
+            <h3>Kartik S Marathe</h3>
+            <p></p>
+        </div>
+    </div>
+    <div class="row team-member" align="center">
+        <div class="col-lg-3">
+            <img class="img-size img-circle" src="img/team/.jpg">
+            <h3>Amith S Kumar</h3>
+            <p></p>
+        </div>
+        <div class="col-lg-3">
+            <img class="img-size img-circle" src="img/team/.jpg">
+            <h3>Jigisha Kamal</h3>
+            <p></p>
+        </div>
+        <div class="col-lg-3">
+            <img class="img-size img-circle" src="img/team/Kaushik Sengupta.jpg">
+            <h3>Kaushik Sengupt</h3>
+            <p></p>
+        </div>
+        <div class="col-lg-3">
+            <img class="img-size img-circle" src="img/team/Udayraj Nayak.jpg">
+            <h3>Udayraj V Nayak</h3>
+            <p></p>
+        </div>
+    </div>
+    <div class="row team-member" align="center">
+        <div class="col-lg-3">
+            <img class="img-size img-circle" src="img/team/.jpg">
+            <h3>Revathi M S</h3>
+            <p></p>
+        </div>
+        <div class="col-lg-3">
+            <img class="img-size img-circle" src="img/team/Mohit Venkatesh.jpg">
+            <h3>Mohit Venkatesh</h3>
+            <p></p>
+        </div>
+        <div class="col-lg-3">
+            <img class="img-size img-circle" src="img/team/.jpg">
+            <h3>Suhaas N</h3>
+            <p></p>
+        </div>
+        <div class="col-lg-3">
+            <img class="img-size img-circle" src="img/team/Kiran Thunuguntla.jpg">
+            <h3>Thunuguntla VNS Sri Kiran</h3>
+            <p></p>
+        </div>
+    </div>
+    <div class="row team-member" align="center">
+        <div class="col-lg-3">
+            <img class="img-size img-circle" src="img/team/ALOK CHAKRAVARTHY N.jpeg">
+            <h3>Alok</h3>
+            <p></p>
+        </div>
+        <div class="col-lg-3">
+            <img class="img-size img-circle" src="img/team/.jpg">
+            <h3>P sujith</h3>
+            <p></p>
+        </div>
+        <div class="col-lg-3">
+            <img class="img-size img-circle" src="img/team/.jpg">
+            <h3>Shubam Sudhakar Gaonkar</h3>
+            <p></p>
+        </div>
+        <div class="col-lg-3">
+            <img class="img-size img-circle" src="img/team/.jpg">
+            <h3>Abhishek Pratap Singh</h3>
+            <p></p>
+        </div>
+    </div>
+    <div class="row team-member" align="center">
+        <div class="col-lg-3">
+            <img class="img-size img-circle" src="img/team/.jpg">
+            <h3>Yash R Kolkur</h3>
+            <p></p>
+        </div>
+        <div class="col-lg-3">
+            <img class="img-size img-circle" src="img/team/.jpg">
+            <h3>Manoj. M</h3>
+            <p></p>
+        </div>
+        <div class="col-lg-3">
+            <img class="img-size img-circle" src="img/team/.jpg">
+            <h3>Vikramadithyan SA</h3>
+            <p></p>
+        </div>
+        <div class="col-lg-3">
+            <img class="img-size img-circle" src="img/team/Preetham Reddy.jpg">
+            <h3>R Preetham Reddy</h3>
+            <p></p>
+        </div>
+    </div>
+				</div>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+</div>
+
+<br/>
+<br/>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" align="center"><i class="fa fa-times"></i> Close</button>
                 </div>
             </section>
         </div>
     </div>
+                    
+    <script>
+	
+			$('#b2019').on('click', function(){
+			
+				 var dvPassport = document.getElementById("d2019");
+				 if(dvPassport.style.display == "block"){ 
+					dvPassport.style.display = "none";
+					document.getElementById("b2019").innerHTML = "Batch 2019";
+				 }
+				 
+				 else{ dvPassport.style.display = "block";
+			  document.getElementById("b2019").innerHTML = "X";
+			}
+			})
+			
+			$('#b2020').on('click', function(){
+			
+				 var dvPassport = document.getElementById("d2020");
+				 if(dvPassport.style.display == "block"){ 
+					dvPassport.style.display = "none";
+					document.getElementById("b2020").innerHTML = "Batch 2020";
+				 }
+				 
+				 else{ dvPassport.style.display = "block";
+			  document.getElementById("b2020").innerHTML = "X";
+			}
+			})
+			
+			$('#b2021').on('click', function(){
+			
+				 var dvPassport = document.getElementById("d2021");
+				 if(dvPassport.style.display == "block"){ 
+					dvPassport.style.display = "none";
+					document.getElementById("b2021").innerHTML = "Batch 2021";
+				 }
+				 
+				 else{ dvPassport.style.display = "block";
+			  document.getElementById("b2021").innerHTML = "X";
+			}
+			})
+			
+			
+				$('#b2022').on('click', function(){
+			
+				 var dvPassport = document.getElementById("d2022");
+				 if(dvPassport.style.display == "block"){ 
+					dvPassport.style.display = "none";
+					document.getElementById("b2022").innerHTML = "Batch 2022";
+				 }
+				 
+				 else{ dvPassport.style.display = "block";
+			  document.getElementById("b2022").innerHTML = "X";
+			}
+			})
+	
+	
+                                                            
+            $('#eWingB').on('click', function() {
+                
+                $('#myTab a[href="#menu1"]').tab('show');
+            });
+            $('#mWingB').on('click', function() {
+                
+                $('#myTab a[href="#menu2"]').tab('show');
+            });
 
+        </script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <!-- Plugin JavaScript -->
